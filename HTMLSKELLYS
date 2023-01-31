@@ -1,0 +1,101 @@
+<!--WITHOUT TABLE-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Page Title</title>
+
+	<!--Additional elements for browsers and robots go here goes here-->
+
+</head>
+
+<body>
+	<!--Elements visible to users go here-->
+
+</body>
+
+</html>
+
+
+<!--TRIAD COLOR NOTES
+
+#8CAD45 -DKGRN
+#96B8FA -LT BLUE
+#D2FA7D -LITE GRN
+#FA7B64 - ORANGWELITE
+#AD5D4E - DKORANGEBRWN
+
+-->
+
+
+
+
+
+
+<!--WITH TABLE-->
+
+<!DOCTYPE html>
+<html>
+
+<!--LIKE A ROUGH DRAFT FOR MYSELF-->
+
+<!--Head is where meta date goes-->
+  <head>
+    <title>Molly's Cheat Sheet</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+  </head>
+  
+<!--Body will include all the other elements-->
+  <body>
+
+    <header>
+      <nav>
+        <h3>HTML</h3>
+        <h3>CSS</h3>
+      </nav>
+      <h2>Basics of HTML & CSS Personal Guide</h2>
+    </header>
+
+
+
+    <main>
+      <section>
+        <h2>HTML</h2>
+        <br>
+        <table>
+          <thead>
+            <tr>
+              <th>head 1</th>
+              <th>head 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>row 1 col 1</td>
+              <td>row 1 col 2</td>
+            </tr>
+            <tr>
+              <td>row 2 col 1</td>
+              <td>row 2 col 2</td>
+            </tr>
+            <tr>
+              <td>row 3 col 1</td>
+              <td>row 3 col 2</td>
+              <td>row 3 col 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </body>
+</html>

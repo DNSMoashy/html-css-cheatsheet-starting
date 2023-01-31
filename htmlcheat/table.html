@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <!--Head is where meta date goes-->
+  <head>
+    <title>HTML tables</title>
+    <link rel="stylesheet" href="../cssfiles/htmltable.css" type="text/css">
+  </head>
+<!--Body will include all the other elements-->
+  <body>
+    <h1>THIS FORMAT HAS BEEN UPDATED AS OF 01-17-23/SHOULD BE CORRECT</h1>
+    <header>
+      <nav>
+        <h3>
+          <a href="../index.html">Home</a>
+        </h3>
+        <h3>
+          <a href="./elements.html">HTML Elements</a>
+        </h3>
+        <h3>
+          <a href="./forms.html">HTML Forms</a>
+        </h3>
+      </nav>
+      <h2>HTML Tables Guide</h2>
+    </header>
+
+    <main>
+
+      <div>
+        <h3>Basic Table Info:</h3>
+        <ul>
+          <li>In HTML, a table is an element that allows for the 
+            representation of data in two dimensions; these dimensions are columns and rows.</li>
+          <li>Tables are composed of multiple smaller types of elements that have special meaning 
+            within the structure of the table. The elements that are used in the construction of a
+            typical table are as follows:</li>
+          <li>Generally, tables are used to display tabular data in particular.</li>
+          <li>In modern development, the use of tables to position elements not semantically 
+            related to a table is an anti-pattern and should be avoided.</li>
+        </ul>
+
+        <h3>Table Structure & Nesting:</h3>
+        <img src="../assets/tabletree1.png" height="500" width="500">
+        <img src="../assets/tabletree2.png" height="500" width="500">
+        <ul>
+          <li>GO INTO CODE OF THIS DOCUMENT FOR REVIEW.</li>
+          <li>Notice the nesting in the following table.</li>
+            <ol>
+              <li>thead, tbody, and footer are siblings and children of table
+                (these are also semantically correct html vs just using tr) </li>
+              <li>tr are children of the above.</li>
+              <li>The tr within thead is a parent to th.</li>
+              <li>The tr within tbody is a parent to td.</li>
+              <li>Within td are its children p elements.</li>
+            </ol>
+          <li>SELF REMINDER: elements within elements are children,
+            text within element does NOT need to be formatted as a child.
+          </li>
+          <li>SELF REMINDER: you don't need to add a space after a tag to write a sentence.
+            You can just type immediatley after the >.
+          </li>
+        </ul>
+      </div>
+
+     <!--HTML TABLE TABLE LOL-->
+      <table id="table">
+        <thead>
+          <tr>
+            <th colspan="3">
+            HTML Table Elements
+            </th>
+          </tr>
+          <tr>
+            <th>tag(s)</th>
+            <th>self closing?</th>
+            <th>description</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td> < table > </td>
+            <td>no</td>
+            <td> 
+              <p>Holds all table content with rows & columns.</p>
+              <p>
+              Can NOT have both tbody & tr as direct descendants.
+              One or the other.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td> < thead > </td>
+            <td>no</td>
+            <td>
+              <p> Defines & contains the headings of columns within rows.</p>
+            </td>
+          </tr>
+          <tr>
+            <td> < tbody > </td>
+            <td>no</td>
+            <td>
+              <p>
+              More semantic element than tr. 
+              Contains all of the tables main content & tr elements
+              that are not already in the header or footer.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< tfoot ></td>
+            <td>no</td>
+            <td>
+              <p>
+              table footer that uses table rows to summarize content at 
+              end of the table or make a footer.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< th ></td>
+            <td>name</td>
+            <td>
+              <p>
+              Used within the thead instead of td. Adds titles to the rows
+              & columns of a table. MUST be enclosed within a tr.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< tr ></td>
+            <td>table row</td>
+            <td>
+              <p>
+              adds rows to a table before adding headings or data.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< td ></td>
+            <td>table data</td>
+            <td>
+              <p>
+              Nested inside table rows to add a cell of data
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< tag rowspan = "" >, < tag colspan = "" ></td>
+            <td>TABLE ATTRIBUTES</td>
+            <td>
+              <ul>
+                <li>rowspan-indicates how many rows a cell should span</li>
+                <li>colspan-indicates how many columns a cell should span</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

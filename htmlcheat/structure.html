@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>HTML Structure</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>THIS FORMAT HAS BEEN UPDATED AS OF 01-17-23/SHOULD BE CORRECT</h1>
+      <nav>
+        <h3>
+          <a href="../index.html">Home</a>
+        </h3>
+        <h3>
+          <a href="./elements.html">HTML Elements & Attributes</a>
+        </h3>
+        <h3>
+          <a href="./table.html">HTML Tables</a>
+        </h3>
+        <h3>
+          <a href=".//forms.html">HTML Forms</a>
+        </h3>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="quote">
+        <p>
+          "Because the header of a page is part of the body of the page, just as the footer. 
+          Think about this <body> as a human body: Head, middle of the body and the feet. 
+          A page has the same concept: Header (is the head), section (middle of the body),
+          and footer (the feet)."
+        </p>
+        <a href="https://html.spec.whatwg.org/multipage/">Helpful Link</a>
+      </div>
+
+      <h2>Basic Structure:</h2>
+      <ul>
+        <li>Each HTML document can be considered a "Document Tree".</li>
+        <li>HTML is organized into a family tree structure. Such as grand-parents,
+          parents, children, siblings etc.</li>
+        <li>Every HTML Document has the following in order:
+          !DOCTYPE, html (opening & closing),head(O&C) & body (O&C) inside html.</li>
+        <li>Any visible content should be placed within the opening and closing body tags.</li>
+        <li>Headings and sub-headings, h1 to h6 tags, are used to provide titles
+           for sections of content.</li>
+        <li>You can't wrap a block element with an inline element. 
+          <a href="https://www.w3schools.com/html/html_blocks.asp">Difference between the two.
+          </a></li>
+      </ul>
+
+      <h2>Nesting:</h2>
+      <ul>
+        <li>HTML elements can be nested inside other elements. 
+          The enclosed element is the child of the enclosing parent element.</li>
+        <li>The relationship between elements and their ancestor 
+          and descendent elements is known as hierarchy.</li>
+        <li>Children are nested within parent are shown via a tab/2spaces of indentation
+          for better readability.</li>
+          <ol>
+            <li>DOCTYPE and html are same nesting level,</li>
+            <li>Head and body are the children of HTML but siblings to each other.
+              They are on indented under head, but same nesting to each other. </li>
+            <li>Elements such as main & footer go within body as a child element.</li>
+            <li>Elements like div & footer can be both parents and children 
+              depending on order/structure.</li>
+          </ol>
+        <li>There can be multiple levels of nesting thus extending to grand 
+          and great grand children.</li>
+        <li>SELF REMINDER: elements within elements are children,
+            text within element does NOT need to be formatted as a child.
+        </li>
+        <li>SELF REMINDER: you don't need to add a space after a tag to write a sentence.
+          YOu can just type immediatley after the >.
+        </li>
+      </ul>
+
+      <h2>Semantics</h2>
+      <!--As of 01/17/23 still cannot figure if anchor tag goes within a block element like p-->
+      <a href="./elements.html">More semantics info here</a>
+      <ul>
+        <li>This adds meaning to our code, making it more accesible/easier to read.</li>
+        <li>This can turn meaningless elements such as DIV ( a general purpose element)
+          into one with meaning like main.</li>
+        <li>This can be used to replace a div with a class as a self explanatory element.</li>
+      </ul>
+    </main>
+
+    <footer>
+
+    <div class="image">
+      <h2>All Helpful Figures</h2>
+      <img src="../assets/EN-Semantic-Search-Non-Semantic.png" height="500" width="500">
+      <img src="../assets/doctree.png" height="400" width="500">
+      <img src="../assets/doctree2.png" height="500" width="500">
+      <img src="../assets/HTML-Basic-Format.png" height="500" width="500">
+      <img src="../assets/nesting.png" height="500" width="500">
+    </div>
+
+    </footer>
+  </body>
+
+</html>

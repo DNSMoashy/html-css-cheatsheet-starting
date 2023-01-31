@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <!--Head is where meta date goes-->
+  <head>
+    <title>HTML S, E, & A</title>
+    <link rel="stylesheet" href="../cssfiles/htmltable.css" type="text/css">
+  </head>
+<!--Body will include all the other elements-->
+  <body>
+    <header>
+      <h2>HTML Semantics, Elements, & Attributes Guide</h2>
+      <link url="https://www.codecademy.com/resources/docs/html/semantic-html">
+    </header>
+
+    <nav>
+      <h3>
+        <a href="../index.html">Home</a>
+      </h3>
+      <h3>
+        <a href="./table.html">HTML Tables</a>
+      </h3>
+      <h3>
+        <a href="./forms.html">HTML Forms</a>
+      </h3>
+      <h3>CSS</h3>
+    </nav>
+
+    <main>
+
+      <article>
+        <h2>Basic Semantic Tags & Definitions</h2>
+        <ul>
+          <li>Article:Represents a part of a page which is self-contained and could be published elsewhere.
+             Common uses include blog posts or magazine articles.</li>
+          <li>Aside:Represents a part of a page which is relevant to the current content, 
+            but not a part of it directly. It can be used for related links, for clarifying a statement
+            from the current article, or even for advertising meant for the current page.</li>
+          <li>Details:Encapsulates the summary element and any additional details which 
+            are only visible when the element is in an open state.</li>
+          <li>Fig Caption:Describes the media encapsulated within the figure element.</li>
+          <li>Figure:Encapsulates media such as an image, diagram, or code snippet.</li>
+          <li>Footer:Represents a part of a page which is meant to be at the end of a completed block of 
+            content.Common uses include copyright information for the page or additional links 
+            to relevant pages.</li>
+          <li>Header:Represents a part of a page which is meant to be introductory.
+             It can include heading tags, a logo, a search bar, and navigation elements.</li>
+          <li>Main:Represents the primary content within the body element of the web page.</li>
+          <li>Mark:Represents part of a text that should be rendered as marked or highlighted.</li>
+          <li>Nav:Defines a block of navigation links such as menus and tables of contents.</li>
+          <li>Section:Defines elements in a document, such as chapters, headings, or any
+             other area of the document with the same theme.</li>
+          <li>Summary:Acts as a label for the details element and reveals additional information
+             when clicked.</li>
+          <li>Time:Represents a time-related piece of information and can take a datetime 
+            attribute that makes it machine-readable.</li>
+        </ul>
+      </article>
+
+    <!--HTML ELEMENTS TABLE-->
+    <table id="html-element">
+      <thead>
+        <tr>
+          <th colspan="3">
+          Common HTML Elements
+          </th>
+        </tr>
+        <tr>
+          <th>tag(s)</th>
+          <th>self closing?</th>
+          <th>description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            < !DOCTYPE html>, < html >,
+          </td>
+          <td>DOC-yes, html-no</td>
+          <td>
+            <p>
+              Required bones of every HTML document.
+            </p>
+            <ul>
+              <li>DOCTYPE declares what type of document (ie. HTML)</li>
+              <li>HTML (the root) is what goes after & Contains ALL your code</li>
+              <li>is NOT an element or tag.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < head > < /body >
+          </td>
+          <td>no</td>
+          <td>
+            <ul>
+              <li>
+                HEAD contains metadata (general info about the page) 
+                like < title > or stylesheet links
+                that are not shown on page itself.
+              </li>
+              <li>
+                BODY is the content that is displayed on the browser and
+                will contain all your elements and coding.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tag">< div ></span>
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              "division"
+              An element that is used to group sections. 
+              Can contain other elements & "flow content".
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < section >
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              Similar to div.
+              Defines elements such as chapters or 
+              areas w/ same theme.
+              More semantic then it 
+              but less semantic than the following ...
+            </p>
+            <p> 
+              Can be used with <a >Article</a>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < span >
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              Inline text container used for group styling in CSS.
+              Is generic so use more semantic elements if possible.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tag">
+              < header >, < nav >, < main >, < footer >
+            </span>
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              The Semantic versions of div tag. 
+              Goes within the body tag.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < em > & < strong >
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              Inline styling used to emphasize.
+              em will italicize & strong will make bold.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < a >
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+             Anchor element used to create hyperlink via href (location).
+            </p>
+            <p>
+              Can link to other pages, files, or parts within same page. Use with 
+              <a>Target</a>
+              Attribute.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < video >, & < audio >
+          </td>
+          <td>no</td>
+          <td>
+           <p>
+            Allows us to add video and audio to our site.
+            Universal elements that use the src to link content.
+           </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < embed >
+          </td>
+          <td>yes</td>
+          <td>
+            <p>
+              Used to implement any type of media.
+              Is self-closing.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < img >
+          </td>
+          <td>yes</td>
+          <td>
+            <p>
+              embeds image into document.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < figure > and < figcaption >
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              Figure holds media within it, while 
+              Fig Caption will describe it.
+              Together these elements group media & description.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < article >
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              Holds content that can stand alone.
+            </p>
+            <p>
+              Sometimes used with <a>Section</a> (which defines a theme)
+              to write stand alone content for said theme.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < aside >
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              Adds additional info that enhances content. 
+              Not required to understand main content
+            </p>
+            <p>
+              Similar to a side bar/comment related to content
+              but not obstructing it.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < ol > & < ul >
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              Ordered ( #'s) & Unordered ( Bullet point's) lists. 
+            </p>
+            <p>
+              Must 
+              contain < li > < /li > within both.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < h1 - h6 >, < p >
+          </td>
+          <td>no</td>
+          <td>
+            <p>
+              Heading values from largest (h1) to smallest (h6)
+            </p>
+            <p>
+              P contains your blocks of text.
+            </p>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            < >
+          </td>
+          <td>name</td>
+          <td>
+            <p>
+              description
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < >
+          </td>
+          <td>name</td>
+          <td>
+            <p>
+              description
+            </p>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <table id="html-attr">
+      <thead>
+        <tr>
+          <th colspan="3">
+            Common HTML Attributes
+          </th>
+        </tr>
+        <tr>
+          <th>tag(s)</th>
+          <th>self closing?</th>
+          <th>description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>
+            < tag id = "" >
+          </td>
+          <td>ATTRIBUTE</td>
+          <td>
+            <p>
+              Can be assigned to unique elements to differentiate easily.
+            </p>
+            <p>
+              Can be used in HTML to link on same page or
+              CSS to more precisely manipulate/format element.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < tag alt = "" >
+          </td>
+          <td>ATTRIBUTE</td>
+          <td>
+            <p>
+              added to media as alternate text if image
+              fails to render.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < a href = "" target = "" >
+          </td>
+          <td>ATTRIBUTE</td>
+          <td>
+            <p>
+              Added to anchor tags to tell browser where a hyper link 
+              should be opened
+            </p>
+            <p>
+              a target of "_blank" tells the browser to either open
+              a new tab (modern browser), or a new window (older)
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < >
+          </td>
+          <td>name</td>
+          <td>
+            <p>
+              description
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < >
+          </td>
+          <td>name</td>
+          <td>
+            <p>
+              description
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            < >
+          </td>
+          <td>name</td>
+          <td>
+            <p>
+              description
+            </p>
+          </td>
+        </tr>
+
+      </tbody>
+
+
+
+  </main>
+  </body>
+
+</html>

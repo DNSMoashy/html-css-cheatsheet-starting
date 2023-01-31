@@ -1,0 +1,34 @@
+
+h2 {
+  text-align: center;
+  font-family: 'Nanum Gothic';
+  background-color: aquamarine;
+  color:rgb(58, 43, 62);
+  margin: 0 auto;
+}
+
+article.html {
+  background-color: blueviolet;
+  margin: 0;
+}
+
+section.htmlnav {
+  background-color: blue;
+  margin: 0;
+}
+
+section.htmlnav h3{
+  background-color: rgb(174, 174, 231);
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+a {
+  font-family: 'Fjalla One', sans-serif;
+  color: blueviolet;
+}
+
+a:hover {
+  color: blue;
+}

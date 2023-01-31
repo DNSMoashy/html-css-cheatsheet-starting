@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<!--LIKE A ROUGH DRAFT FOR MYSELF-->
+
+<!--Head is where meta date goes-->
+  <head>
+    <title>Display & Positioning</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+  </head>
+  
+<!--Body will include all the other elements-->
+  <body>
+
+    <header>
+      <nav>
+       <a href="../index.html">HOME</a>
+       <a></a>
+       <a></a>
+      </nav>
+      <h2>Display & Positioning</h2>
+    </header>
+
+    <main>
+      <article id="position">
+        <h3>Positioning</h3>
+        <p>Use the 5 values with offset properties (top, bottom, left, right)</p>
+        <ul>
+          <li>Static: Default Value</li>
+          <li>Absolute: All other elements on page ignore the element/act as if its not present</li>
+            <ul>
+              <li>The element will be positioned relative to its closest positioned parent element.</li>
+              <li>offset properties can be used to determine the final position from there.</li>
+              <li>You can put wherever you need and scrolls with rest of document.</li>
+            </ul>
+          <li>Sticky:Keeps element in document flow as user scrolls then sticks to specified position</li>
+            <ul>
+              <li>Similar to fixed until reaching specified position via offset properties</li>
+            </ul>
+          <li>Relative:position an element relative to its default static position on the web page.</li>
+            <ul>
+              <li>accompany with offset property to specify what it is relative to.</li>
+              <li>EX. top:50px will move the box 50px from the top of its static position.</li>
+              <li>This does not affect positioning of other elements.</li>
+            </ul>
+          <li>Fixed:Fixes to specific position</li>
+            <ul>
+              <li>fixes an element to a specific position on the page (regardless of user scrolling)</li>
+              <li>Often used for navigation bars.</li>
+              <li>Accompany with offset properties.</li>
+            </ul>
+        </ul>
+
+        <section id="z-index">
+          <h3>Z-Index</h3>
+          <p>controls how far back or how far forward an element should appear on the web page when 
+          elements overlap. This can be thought of as the depth of elements, with deeper elements
+          appearing behind shallower elements.</p>
+          <p>Accepts integer values 0-1. This instructs browser on the order elements should be
+          layered.</p>
+          <ul>
+            <li>Default is 0</li>
+            <li>closer to 1 the more shallow/in front</li>
+            <li>closer to 0 the deeper/behind a block becomes</li>
+            <li>use with position and offset properties</li>
+            <li>does NOT work on static</li>
+          </ul>
+        </section>
+
+        <section id="img">
+          <img href="../assets/position_type.png">
+          <img href="../assets/understanding_zindex_04.png">
+          <img href="../assets/relative-comparison.png">
+        </section>
+      </article>
+      <article id="display">
+        <h3>Display</h3>
+        <p>Every HTML element has a default display value that dictates if it can share horizontal
+          space with other elements. Some elements fill the entire browser from left to right 
+          regardless of the size of their content. Other elements only take up as much horizontal 
+          space as their content requires and can be directly next to other elements.</p>
+        <p>Has three values: inline, block, inline-block.</p>
+        <h3>Other Properties</h3>
+        <h4>Float:</h4>
+        <p>moving an element as far left or as far right as possible in the container, you can
+           use the float property. Must have width specified.</p>
+        <p>commonly used for wrapping text around an image. (reg CSS not best use of this)</p>
+        <p>when multiple floated elements have different heights, it can affect their layout on
+           the page. Specifically, elements can “bump” into each other and not allow other elements to properly move to the left or right.</p>
+        <h4>Clear:</h4>
+        <p>The clear property specifies how elements should behave when they bump into each other on
+           the page. It can take on one of the following values:</p>
+        <ol>
+          <li>left—the left side of the element will not touch any other element within the same containing element.</li>
+          <li>right—the right side of the element will not touch any other element within the same containing element.</li>
+          <li>both—neither side of the element will touch any other element within the same containing element.</li>
+          <li>none—the element can touch either side.</li>
+        </ol>
+        <section id="inline">
+          <h4>Inline</h4>
+          <p>Inline is the default display for some elements such as em and strong.</p>
+          <p>Inline elements have a box that wraps tightly around their content, only taking up 
+            the amount of space necessary to display their content and not requiring a new line
+            after each element. </p>
+          <p>inline elements cannot be altered in size with the height or width CSS properties.</p>
+          <p>displays its content on the same line as the content surrounding it, including the anchor tag.</p>
+        </section>
+        <section id="block">
+          <h3>Display:Block</h3>
+          <p>not displayed in the same line as the content around them. </p>
+          <p>These elements fill the entire width of the page by default, width property can also be 
+            set. Unless otherwise specified, they are the height necessary to accommodate their
+            content. </p>
+        </section>
+        <section id="inlineblock">
+          <h3>Inline-Block</h3>
+          <p>combines features of both inline and block elements</p>
+          <p>can appear next to each other and we can specify their dimensions using the width
+            and height properties. Images are the best example of default inline-block elements.</p>
+        </section>
+
+      </article>
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </body>
+</html>

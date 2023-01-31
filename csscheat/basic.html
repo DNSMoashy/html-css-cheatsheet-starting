@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Molly's Cheat Sheet</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+  </head>
+  
+  <body>
+
+    <header>
+      <nav>
+        <h3>
+          <a href="../index.html">Home</a>
+        </h3>
+        <a href="./boxmodel.html">Box Model</a>
+      </nav>
+      <h2>Basics of HTML & CSS Personal Guide</h2>
+    </header>
+
+    <main>
+      <div class="tips">
+        <h3>Tips</h3>
+        <ul>
+          <li>Use classes when elements share many characteristics.</li>
+          <li>Use ID when element is unique</li>
+          <li>Keep Code: (D)on't (R)epeat (Y)ourself</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <article class="cssmain">
+        <p>CSS, or Cascading Style Sheets, is a language that is used in combination with HTML
+         that customizes how HTML elements will appear.</p>
+        <p>CSS code can be Inline style or a separate file.
+          <ul>
+            <li>CSS styles can be directly added to HTML elements by using the style attribute 
+              in the elements opening tag. Each style declaration is ended with a semicolon.</li>
+            <li>More commonly CSS gets its own file to make code easier to read/maintain. 
+              The extension for CSS files is .css. These can be linked to an HTML file using a link
+              tag in the head section.</li>
+          </ul>
+        </p>
+        <p>To connect an external CSS file to its html file you would use the link
+          element within the head tag. Normally included within the link element is:
+          <ol>
+            <li>href attribute to specify the URL to the external resource</li>
+            <li>rel attribute to specify the relationship of the linked document to the 
+              current document</li>
+            <li>type attribute to define the type of content being linked</li>
+          </ol>
+        </p>
+      </article>
+
+      <article class="anatomy">
+        <h3>Anatomy</h3>
+        <p>Rulesets: A ruleset is defined within either the HTML document itself, or 
+          in one or more separate files (known as stylesheets) that use the .css extension.</p>
+        <p>Next in the ruleset syntax is the block of declarations between the two braces {...}. 
+          This is the block of code that defines the style that will be applied. 
+          This is equivalent to the style attribute value in the inline-style.</p>
+        <p>The declaration block, or attribute value, is made up of one or more declarations. 
+          A declaration is made up of a CSS property name, followed by a colon (color:) then a value, 
+          followed by a semicolon, (blue;).</p>
+      </article>
+
+      <article id="selectors" class="selectors">
+        <h3>Selectors</h3>
+        <p>CSS type selectors are used to match all elements of a given type or tag name. 
+          When using type selectors, elements are matched regardless of their nesting level
+          in the HTML.</p>
+          <p>CSS can select elements by type, class, id, & attribute.</p>
+        <p>Specificity used when there are multiple conflicting property values 
+          that point to the same element. When determining which rule to apply, the selector with the
+          highest specificity wins out. The most specific selector type is the ID selector, followed by
+          class selectors, followed by type selectors.</p>
+        <p>Pseudo-Class: Allows elements to have to different states, such as hover
+          or before and after click. Can be attached to any selector.</p>
+        <h3>How To Single Selector:</h3>
+        <ul>
+          <li>*-Universal/All</li>
+          <li>.classname-by class</li>
+          <li>#idname-by ID</li>
+          <li>element- type selector; all like elements (ex. all p)</li>
+          <li>[attribute]-by attribute</li>
+            <ul>
+              <li>EX: img[src*='']</li>
+            </ul>
+        </ul>
+        <h3>How to Chain Multiple Selectors:</h3>
+        <ol>
+          <li>Descendant Selector: match elements that are descended from one another
+            <ul>
+              <li>EX: div p {}</li>
+              <li>All p within div are selected. Parent THEN child/nested</li>
+              <li>Denoted by single space between each selector and descended selector.</li>
+              <li>All matching elements selected regardless of nesting.</li>
+            </ul>
+          </li>
+          <li>Chaining Selectors: selecting elements who also have the same class/ID, etc..
+            <ul>
+              <li>EX: h3.section-heading {}</li>
+              <li>All h3 elements with the class section-heading are selected.</li>
+              <li>Element and then selector WITHOUT a space.</li>
+            </ul>
+          </li>
+          <li>Grouping Selectors: Match multiple selectors to same CSS rule via comma
+            <ul>
+              <li>EX: h1, h2 {}</li>
+              <li>Separated by comma then space.</li>
+            </ul>
+          </li>
+        </ol>
+      </article>
+      
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </body>
+</html>

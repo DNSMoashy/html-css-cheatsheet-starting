@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head is where meta date goes-->
+  <head>
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="../cssfiles/htmltable.css" type="text/css">
+  </head>
+<!--Body will include all the other elements-->
+  <body>
+
+    <header>
+      <nav>
+        <h3>
+          <a href="../index.html">Home</a>
+        </h3>
+        <h3>
+          <a href="./elements.html">HTML Elements</a>
+        </h3>
+        <h3>
+          <a href="./table.html">HTML Tables</a>
+        </h3>
+      </nav>
+      <h2>HTML Forms Guide</h2>
+      <p>In HTML, forms are used for gathering and sending user input to an external source 
+        (like a server) for processing. This is done with the form tag, which contains various 
+        labels and inputs.</p>
+    </header>
+   
+    <main>
+      <table id="table">
+        <thead>
+          <tr>
+            <th colspan="3">
+              HTML Form Elements
+            </th>
+          </tr>
+          <tr>
+            <th>tag(s)</th>
+            <th>self closing?</th>
+            <th>description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>< form ></td>
+            <td>no</td>
+            <td>
+              <p>
+                Used to collect & send info to external source. Can contain
+                various input elements that when submitted the info in the input 
+                is passed to the source named in the action attribute.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< input ></td>
+            <td>yes</td>
+            <td>
+              <p>
+                Used with type and value in conjunction with forms. info submitted to input 
+                sent to external source.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< text area ></td>
+            <td>no</td>
+            <td>
+              <p>
+                Used to create text box for multi-line input. The element supports
+                rows and cols attr. which determine the initial size. Has both opening and 
+                closing tags; Can be stretched/shrunk by the user.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< select ></td>
+            <td>no</td>
+            <td>
+              <p>
+                Used to create dropdown list via an <a>option element</a> Only one 
+                option can be selected at a time. Selects name and Options value are a 
+                key value pair.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< label ></td>
+            <td>no</td>
+            <td>
+              <p>
+                Identifies a specific input based on matching ID & Value. 
+                Clicking label will focus field of related input. 
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< datalist ></td>
+            <td>no</td>
+            <td>
+              <p>
+                Pairing data list with input can make a basic search/autocomplete functionality. 
+                To do this both input and data list must have an ID that matches inputs value.
+              </p>
+              <p>
+                Data list stores <a>options</a>. Shown as a drop down when user clicks on
+                input field.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< type = submit ></td>
+            <td>Submittable Input</td>
+            <td>
+              <p>
+                By making inputs type submit a submit button will be rendered to 
+                submit the form and execute its action.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>< form ></td>
+            <td>no</td>
+            <td>row 1 col 3</td>
+          </tr>
+          <tr>
+            <td>< form ></td>
+            <td>no</td>
+            <td>row 1 col 3</td>
+          </tr>
+          </tbody>
+        </table>
+      
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3">
+                Form Attributes
+              </th>
+            </tr>
+            <tr>
+              <th>attribute</th>
+              <th>input/type</th>
+              <th>description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> type = "checkbox"</td>
+              <td>input</td>
+              <td>
+                <p>
+                  Renders single check box item. To create group use same <a>name</a>
+                  attribute. Multiple check boxes can be selected for same topic.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>type = "number"</td>
+              <td>input</td>
+              <td>
+                <p>
+                  Allow users to only enter #'s or special characters. When part of a form 
+                  It will recieve key value pair of name : value.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>type = "range"</td>
+              <td>input</td>
+              <td>
+                <p>
+                  Creates a range slider as a selector between a min and max value attribute.
+                  Can be adjusted in increments with <a>step</a> attr. Meant as visual widget 
+                  to adjust between values.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>type = "text"</td>
+              <td>input</td>
+              <td>
+                <p>
+                  Renders a single row input field users can type inside. Name & Value 
+                  key value pair.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>type = "radio button"</td>
+              <td>Input</td>
+              <td>
+                <p>
+                  Renders single radio button. Can link multiple related buttons with 
+                  the same name attribute. Only a single option can be chosen out of the group.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>name = ""</td>
+              <td>input name attribute</td>
+              <td>
+                <p>
+                  For a form to send data it must be in a key value pair. This is achieved via 
+                  name attr. Name will be the "key". 
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>type = "password'</td>
+              <td>input</td>
+              <td>
+                <p>
+                  Renders single row of censored text within field. 
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>required</td>
+              <td>w/ in input</td>
+              <td>
+                <p>
+                  Specifies field must include value to be submitted. Put at end simply as 
+                  required. no type needed.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>max= & max length=</td>
+              <td>w/ in input</td>
+              <td>
+                <p>
+                  Max attr. specifies max # value. Max length specifies maxiumum # of 
+                  characters that can be entered in field.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>pattern= ""</td>
+              <td>w/in input</td>
+              <td>
+                <p>
+                  Uses regular expression to match against value of input. uses [].
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>min= & minlength=</td>
+              <td>w/in input</td>
+              <td>
+                <p>
+                  Same but vice versa of <a>max</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>< form ></td>
+              <td>no</td>
+              <td>row 1 col 3</td>
+            </tr>
+            <tr>
+              <td>< form ></td>
+              <td>no</td>
+              <td>row 1 col 3</td>
+            </tr>
+            <tr>
+              <td>< form ></td>
+              <td>no</td>
+              <td>row 1 col 3</td>
+            </tr>
+            <tr>
+              <td>< form ></td>
+              <td>no</td>
+              <td>row 1 col 3</td>
+            </tr>
+          </tbody>
+
+        </table>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </body>
+</html>

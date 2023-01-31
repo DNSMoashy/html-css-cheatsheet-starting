@@ -1,0 +1,32 @@
+
+* {
+  background-color: rgb(84, 84, 150);
+  
+}
+
+table tr th {
+  border: 10px;
+  border-style: solid;
+}
+
+table tr td {
+  border: 6px;
+  border-style: solid;
+}
+
+
+h2 {
+  font-family: 'Nanum Gothic';
+  background-color: aquamarine;
+  color:rgb(58, 43, 62)
+}
+
+a {
+  font-family: 'Fjalla One', sans-serif;
+  color: blueviolet;
+  background-color: aquamarine;
+}
+
+a:hover {
+  color: blue;
+}

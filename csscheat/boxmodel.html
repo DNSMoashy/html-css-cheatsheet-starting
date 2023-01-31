@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Molly's Cheat Sheet</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+  </head>
+  
+  <body>
+
+    <header>
+      <nav>
+        <h3>
+          <a href="../index.html">Home</a>
+        </h3>
+        <a href="#boxmodel">Box Model</a>
+        <a href="#padding">Padding, Border, & Margin</a>
+        <a href="#sizing">Sizing, Overflow, & Visibility</a>
+        <a></a>
+
+
+      </nav>
+      <h2>Basics of HTML & CSS Personal Guide</h2>
+    </header>
+
+    <main>
+      <article id="boxmodel" class="boxmodel">
+        <h3>The Box Model</h3>
+        <p>The Box Model is a CSS layout mechanism that the web browser
+           uses to render content organized by box-shaped elements. Each element is made of four 
+           specific areas.</p>
+        <img src="../assets/Boxmodell-detail.png" height="500" width="500">
+        <p>Browsers load HTML elements with default position values. 
+          All elements on a web page are interpreted by the browser as “living” inside of a box. 
+          This is what is meant by the box model.
+        </p>
+        <h4>Height & Width</h4>
+        <ul>
+          <li>An element’s content has two dimensions: a height and a width.</li>
+          <li>By default, the dimensions of an HTML box are set to hold the raw contents of the box.</li>
+          <li>The CSS height and width properties can be used to modify these default dimensions.</li>
+          <li> When the width and height of an element are set in pixels, it will be the same size on all devices
+             — an element that fills a laptop screen will overflow a mobile screen.</li>
+        </ul>
+        <h4>Box Sizing</h4>
+        <p>allows us to include the padding and boarder in the calculation of an element’s height and width</p>
+        <p>Has 2 values:</p>
+        <p>border-box: Any assigned padding or border is included in the calculation of an elements height or width.</p>
+        <p>content-box: Default CSS behavior, the assigned height or width of an element plus any padding will be the total height or weight.</p>
+        <section id="content">
+          <h3>Content:</h3>
+          <ul>
+            <li>Content Area:
+              <ul>
+                <li>This area contains the actual content of an element, including text and images.
+                It also sometimes has a background-color or background-image</li>
+                <li>width and height: The width and height of the content area.</li>
+                <li>Can be set in px or %.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="padding">
+          <h3>Padding:</h3>
+            <ul>
+              <li>Padding Area:
+                <ul>
+                  <li>This area is located between the content and border areas. It can be changed on 
+                  the top, right, bottom and left sides.</li>
+                  <li>The amount of space between the content area and the border.</li>
+                  <li> Padding is like the space between a picture and the frame surrounding it.</li>
+                </ul>
+              </li>
+            </ul>
+          <p>The space between the contents of a box and the borders of a box is known as padding. 
+          Padding is like the space between a picture and the frame surrounding it.</p>
+          <p>The padding property is often used to expand the background color and make the
+             content look less cramped.</p>
+          <p>In CSS, you can modify this space with the padding property.</p>
+          <div class="shorthand">
+            <h4>Padding Shorthand:</h4>
+            <ol>
+              <li>4 values: top, right, bottom, left.</li>
+              <li>3 values: top, left & right when equal, bottom.</li>
+              <li>2 values: top & bottom, left & right.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="border">
+          <h3>Border:</h3>
+          <ul>
+            <li>Border Area:
+              <ul>
+                <li>This area is located between the margin and padding areas. 
+                Their thickness and style can be changed.</li>
+                <li>Surrounds the content and padding areas.</li>
+                <li>Properties can be set within one line of code or multiple.</li>
+              </ul>
+            </li>
+          </ul>
+          <p>A border is a line that surrounds an element, like a frame around a painting.
+            Borders can be set with a specific width, style, and color.
+          </p>
+          <p>The default border is medium none color, where color is the current color of
+             the element. If width, style, or color are not set in the CSS file, the web browser assigns 
+             the default value for that property.</p>
+          <div class="radius">
+            <h4>Border Radius</h4>
+            <p>You can modify the corners of an element’s border box with the border-radius property.</p>
+            <p>You can create a border that is a perfect circle by first creating an element with the same 
+            width and height, and then setting the radius equal to half the width of the box, which is 50%.
+            </p>
+          </div>
+        </section>
+       
+        <section id="margin">
+          <h3>Margin:</h3>
+          <ul>
+            <li>Margin Area:
+              <ul>
+                <li>This is the outermost area in the Box Model. It borders with the margin areas
+                 of neighboring elements</li>
+                <li>It can be changed on the top, right, bottom and left sides.</li>
+                <li>The amount of space between the border and the outside edge of the element.</li>
+              </ul>
+            </li>
+          </ul>
+          <p>Margin refers to the space directly outside of the box. The margin property is used to 
+            specify the size of this space.</p>
+          <p>This means that other HTML elements on the page cannot come within however many pixels
+            of the paragraphs border as set by the margin</p>
+          <div class="shorthand">
+            <h4>Margin Shorthand:</h4>
+            <ol>
+              <li>4 values: top, right, bottom, left.</li>
+              <li>3 values: top, left & right when equal, bottom.</li>
+              <li>2 values: top & bottom, left & right.</li>
+            </ol>
+          </div>
+          <div class="auto">
+            <h4>Auto/Centering</h4>
+            <p>The margin property also lets you center content. However, you must follow a few syntax 
+            requirements. In order to center an element, a width must be set for that element.
+            It’s not possible to center an element that takes up the full width of the page, since the
+            width of the page can change due to display and/or browser window size.
+            </p>
+            <p>margin: 0 auto; will center the divs in their containing elements. The 0 sets the top and
+             bottom margins to 0 pixels. The auto value instructs the browser to adjust the left and
+             right margins until the element is centered within its containing element.</p>
+          </div>
+          <div class="collapse">
+            <h4>Margin Collapse</h4>
+            <ul>
+              <li>Horizantal(right & left):add the sum of margins</li>
+              <li>Vertical(top & bottom):Larger margin sets/determines distance.</li>
+            </ul>
+            <p>
+              As you have seen, padding is space added inside an element’s border, while margin is 
+              space added outside an element’s border. One additional difference is that top and
+              bottom margins,also called vertical margins, collapse, while top and bottom padding 
+              does not.</p>
+            <p>Horizontal margins (left and right), like padding, are always displayed and added
+              together. For example, if two divs with ids #div-one and #div-two, are next to each
+              other, they will be as far apart as the sum of their adjacent margins.</p>
+            <p>
+              Unlike horizontal margins, vertical margins do not add. Instead, the larger
+              of the two vertical margins sets the distance between adjacent elements.
+            </p>
+          </div>
+        </section>
+
+      </article>
+      <article id="sizing" class="sizing">
+        <h2>Box Model:Sizing</h2>
+        <section id="wh">
+          <p>Because a web page can be viewed through displays of differing screen size, the content
+          on the web page can suffer from those changes in size. To avoid this problem, CSS offers
+          two properties that can limit how narrow or how wide an element’s box can be sized to:</p>
+          <p>Content, like text, can become difficult to read when a browser window is narrowed or
+          expanded. These two properties ensure that content is legible by limiting the minimum 
+          and maximum widths of an element.</p>
+          <h4>Four Attributes</h4>
+          <ul>
+            <li>min-width—this property ensures a minimum width of an element’s box.</li>
+            <li>max-width—this property ensures a maximum width of an element’s box.</li>
+            <li>min-height — this property ensures a minimum height for an element’s box.</li>
+            <li>max-height — this property ensures a maximum height of an element’s box.</li>
+          </ul>
+        </section>
+
+        <section id="overflow">
+          <h3>Overflow</h3>
+          <p>All of the components of the box model comprise an element’s size.</p>
+          <h5>An Example of this:</h5>
+          <ul>
+            <li>An img comprised of the following dimensions: 364px wide by 244px tall
+              <ul>
+                <li>300 pixels wide</li>
+                <li>200 pixels tall</li>
+                <li>10 pixels padding on the left and right</li>
+                <li>10 pixels padding on the top and bottom</li>
+                <li>2 pixels border on the left and right</li>
+                <li>2 pixels border on the top and bottom</li>
+                <li>20 pixels margin on the left and right</li>
+                <li>10 pixels margin on the top and bottom</li>
+              </ul>
+            <li>The total dimensions (364px by 244px) are calculated by adding all of
+              the vertical dimensions together and all of the horizontal dimensions together. </li>
+            </li>
+          </ul>
+          <p>Sometimes, these components result in an element that is larger than the parent’s 
+            containing area. This is where Overflow comes in so we can view all of an element.
+          that is larger then its parent container.</p>
+          <h5>Common Values</h5>
+          <ul>
+            <li>hidden—when set to this value, any content that overflows will be hidden from view.
+            </li>
+            <li>scroll—when set to this value, a scrollbar will be added to the element’s box so that 
+              the rest of the content can be viewed by scrolling.</li>
+            <li>visible—when set to this value, the overflow content will be displayed outside of the
+               containing element. Note, this is the default value.</li>
+          </ul>
+        </section>
+        
+        <section id="default">
+          <h3>Resetting Defaults</h3>
+          <p>All major web browsers have a default stylesheet they use in the absence of an external
+            stylesheet. These default stylesheets are known as user agent stylesheets. </p>
+          <p>User agent stylesheets often have default CSS rules that set default values for padding
+            and margin. This affects how the browser displays HTML elements, which can make it 
+            difficult for a developer to design or style a web page.</p>
+          <p>To reset these values: * {} set both margin and padding rules to 0</p>
+        </section>
+
+        <section>
+          <h3>Visibility</h3>
+          <p>Elements can be hidden from view with the visibility property.
+            The visibility property can be set to one of the following values:</p>
+          <ul>
+            <li>hidden — hides an element.</li>
+            <li>visible — displays an element.</li>
+            <li>collapse — collapses an element.</li>
+          </ul>
+          <p>users can still view the contents of the list item (e.g., Donate) by viewing the source
+            code in their browser. Furthermore, the web page will only hide the contents of the
+            element. It will still leave an empty space where the element is intended to display.</p>
+          <p>What’s the difference between display: none and visibility: hidden? An element with 
+            display: none will be completely removed from the web page. An element with
+             visibility: hidden, however, will not be visible on the web page, but the space 
+             reserved for it will.</p>
+        </section>
+
+      </article>
+    </main>
+
+    <footer>
+
+    </footer>
+
+  </body>
+</html>
